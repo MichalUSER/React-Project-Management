@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: rgb(233, 231, 236);
+}
+
+.unselectable {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.infoBar {
+    color: white;
+    background: #2c38e0;
+    display: flex;
+    flex-direction: row;
+    padding: 4px;
+}
+
+.projectName {
+    font-size: 18px;
+}
+
+.logo {
+    margin-left: auto;
+    text-align: center;
+}
+
+.showAddList {
+    cursor: pointer;
+    margin: 15px;
+    background: rgba(107, 107, 107, 0.466);
+    width: 150px;
+    border-radius: 8px;
+    height: 53px;
+    color: rgb(236, 229, 229);
+    text-align: center;
+    transition: 0.1s;
+}
+
+.showAddList:hover {
+    background: rgba(117, 117, 117, 0.466);
+}
+
+.showAddList:active {
+    background: rgba(70, 70, 70, 0.466);
+}
+
+.hbox {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.addList {
+    background: rgb(207, 202, 202);
+    width: 185px;
+    padding: 3px;
+    height: 80px;
+    border-radius: 8px;
+    color: rgb(236, 229, 229);  
+    margin: 15px;
+}
+
+.addListInput {
+    margin: 3px;
+    border: 2px solid #5c62bb;
+    font-size: 16px;
+    border-radius: 4px;
+    color: black;
+    background: rgb(238, 236, 241);
+    padding: 5px;
+}
+
+.addListButton {
+    float: left;
+    margin: 2px;
+    width: 65px;
+    min-width: 65px;
+    color: white;
+    border-radius: 6px;
+    padding: 6px;
+    cursor: pointer;
+    background: #24c73f;
+    font-size: 17px;
+}
+.addListButton:hover {
+    background: #4bc760;
+}
+
+.addListButton:active {
+    background: #24c73f;
+}
+
+.hideListButton {
+    float: left;
+    cursor: pointer;
+    color: rgb(71, 71, 71);
+    font-size: 25px;
+    margin: 0;
+    margin-top: 7px;
+    margin-left: 5px;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+.invisible {
+    display: none;
+}
+
+.sideBySide {
+    display: flex;
+    flex-direction: row;
+}
+
+.region1 {
+    height: 30px;
+}
+
+
+.project-list {
+    width: 240px;
+    min-width: 240px;
+    border-radius: 5px;
+    background: rgb(211, 206, 206);
+    margin: 15px;
+    padding: 10px;
+}
+
+.project-list-name {
+    float: left;
+    margin: 5px;
+    color: black;
+    font-size: 15px;    
+}
+
+.project-list-delete {
+    cursor: pointer;
+    float: right;
+    color: black;
+    font-size: 19px;
+    margin: 5px;
+}
+.project-item-edit {
+    cursor: pointer;
+    float: right;
+    color: black;
+    font-size: 19px;
+    margin: 5px;
+}
+
+.project-list-showaddproject {
+    margin: 0;
+    padding: 5px;
+    cursor: pointer;
+    margin-top: 70px;
+    border-radius: 7px;
+    text-align: center;
+}
+.project-list-showaddproject:hover {
+    background: rgb(202, 198, 198);
+}
+.project-list-showaddproject:active {
+    background: rgb(211, 206, 206);
+}
+
+.project-list-addproject {
+    background: transparent;
+    width: 200px;
+    padding: 3px;
+    height: 80px;
+    color: rgb(236, 229, 229);  
+    margin: 5px;
+    margin-top: 30px;
+}
+.project-list-addProjectInput {
+    border: 1px solid rgb(227, 224, 231);
+    width: 100%;
+    margin: 3px;
+    font-size: 16px;
+    border-radius: 4px;
+    color: black;
+    background: rgb(238, 236, 241);
+    padding: 8px;
+}
+.project-list-addProjectButton {
+    float: left;
+    margin: 2px;
+    width: 65px;
+    color: white;
+    border-radius: 6px;
+    padding: 6px;
+    cursor: pointer;
+    background: #24c73f;
+    font-size: 17px;
+}
+.project-list-addProjectButton:hover {
+    background: #4bc760;
+}
+
+.project-list-addProjectButton:active {
+    background: #24c73f;
+}
+
+.project-list-hideProjectButton {
+    float: left;
+    cursor: pointer;
+    color: rgb(71, 71, 71);
+    font-size: 25px;
+    margin: 0;
+    margin-top: 7px;
+    margin-left: 5px;
+}
+
+.project-list-item {
+    padding: 7px;
+    margin-top: 30px;
+    border-radius: 6px;
+    background: rgb(241, 237, 237);
+}
+
+.project-item-delete {
+    cursor: pointer;
+    float: right;
+    color: black;
+    font-size: 19px;
+    margin: 5px;
+}
+
+
+.project-list-editProject {  
+    width: 20%;
+    padding: 15px;
+    box-shadow: 0 0 6px #d8d8d8;
+    background: #cccdcf;
+}
+
+.project-list-editProjectInput {
+    box-sizing: border-box;
+    padding: 7px;
+    width: 100%;
+    border: 2px solid #5c62bb;
+    font-size: 16px;
+    border-radius: 4px;
+    color: black;
+    background: rgb(238, 236, 241);
+}
+
+.project-list-renameProjectButton {
+    float: left;
+    width: 30px;
+    text-align: center;
+    margin: 0;
+    margin-top: 10px;
+    color: white;
+    border-radius: 6px;
+    padding: 6px;
+    cursor: pointer;
+    background: #24c73f;
+    font-size: 17px;
+}
+.project-list-renameProjectButton:hover {
+    background: #4bc760;
+}
+.project-list-renameProjectButton:active {
+    background: #24c73f;
+}
+.project-list-hideRenameProjectButton {
+    float: left;
+    cursor: pointer;
+    color: rgb(71, 71, 71);
+    font-size: 25px;
+    margin: 0;
+    margin-top: 7px;
+    margin-left: 5px;
+}
+
+.editList {
+    width: 20%;
+    padding: 15px;
+    box-shadow: 0 0 6px #d8d8d8;
+    background: #cccdcf;
+}
+.showEditListButton {
+    cursor: pointer;
+    float: right;
+    color: black;
+    font-size: 19px;
+    margin: 5px;
+}
+.editListStyleInput {
+    box-sizing: border-box;
+    padding: 7px;
+    width: 100%;
+    border: 2px solid #5c62bb;
+    font-size: 16px;
+    border-radius: 4px;
+    color: black;
+    background: rgb(238, 236, 241);
+}
+.editListButton {
+    float: left;
+    width: 30px;
+    text-align: center;
+    margin: 0;
+    margin-top: 10px;
+    color: white;
+    border-radius: 6px;
+    padding: 6px;
+    cursor: pointer;
+    background: #24c73f;
+    font-size: 17px;
+}
+.editListButton:hover {
+    background: #4bc760;
+}
+.editListButton:active {
+    background: #24c73f;
+}

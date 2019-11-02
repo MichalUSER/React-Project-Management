@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    background-color: #e6e6e9;
+}
+
+.unselectable {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+.center-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.login {
+    border-radius: 6px;
+    border: 1px solid #aaaaaa;
+    padding: 30px;
+    background: #ececf1;
+}
+
+.login-h1 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.userinput {
+    border: 1px solid rgb(189, 189, 189);
+    background: #ececf1;
+    color: rgb(39, 35, 35);
+    padding: 8px;
+    border-radius: 5px;
+    font-size: 18px;
+    width: 95%;
+}
+.userinput:focus {
+    transition: 0.3s;
+    border-color: #4778e2;
+}
+
+.passinput {
+    margin-top: 25px;
+    border: 1px solid rgb(189, 189, 189);
+    background: #ececf1;
+    color: rgb(39, 35, 35);
+    padding: 8px;
+    border-radius: 5px;
+    font-size: 18px;
+    width: 95%;
+}
+.passinput:focus {
+    transition: 0.3s;
+    border-color: #4778e2;
+}
+
+.login-button {
+    background: #5517ff;
+    width: 120px;
+    text-align: center;
+    font-size: 18px;
+    padding: 12px;
+    cursor: pointer;
+    border-radius: 10px;
+    color: white;
+}
+
+.login-button:hover {
+    background: #7746fc;
+}   
+
+.login-button:active {
+    background: #5517ff;
+}
